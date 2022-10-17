@@ -1,0 +1,32 @@
+conky.config = {
+	alignment		= 'top_right',
+	background		= true,
+	color1			= '111111',
+	color2			= '694513',
+	color3			= '65534d',
+	cpu_avg_samples		= 2,
+	default_color		= '755527',
+	double_buffer		= true,
+	font			= 'Zekton:size=8',
+	draw_shades		= false,
+	gap_x			= 20,
+	gap_y			= 600,
+	minimum_width		= 200,
+	maximum_width		= 200,
+	no_buffers		= true,
+	own_window		= true,
+	own_window_type		= 'override',
+	own_window_transparent 	= true,
+	update_interval		= 1.0,
+	use_xft			= true,
+}
+conky.text = [[
+${goto 10}${color}HDD: $color1$hr
+${voffset 1}${goto 38}${color}${font}${font Bitstream Vera Sans:bold:size=8}${alignr}  Free    Used      Size   Free % 
+
+Root:${goto 25}${font Bitstream Vera Sans:size=7}${alignr}$color ${fs_free /}${color1} ${fs_used /} /$color ${fs_size /} - ${fs_free_perc /}%
+${voffset 6}$color1${fs_bar 4 /}
+${color}${font Bitstream Vera Sans:bold:size=8}
+Home:${goto 25}${font Bitstream Vera Sans:size=7}${alignr}$color ${fs_free /home}${color1} ${fs_used /home} /$color ${fs_size /home} - ${fs_free_perc /home}%
+${voffset 6}$color1${fs_bar 4 /home}
+]]
