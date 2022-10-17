@@ -1,0 +1,106 @@
+! XFT Settings gre
+
+!Xft.antialias:      true
+!Xft.autohint:       false
+!Xft.dpi:            96
+!Xft.rgba:           rgb
+!Xft.hinting:        true
+!Xft.hinystyle:      hintfull
+!Xft.lcdfilter:      lcddefault
+
+
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.autohint: 0
+Xft.hintstyle: hintslight
+Xft.dpi: 96
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+!-------------------------
+! URXVT Settings
+
+
+! special
+*.foreground:   #d3d3d3
+*.background:   #111111
+*.cursorColor:  #d3d3d3
+
+! black
+*.color0:       #382c2f
+*.color8:       #ac9377
+
+! red
+*.color1:       #48393a
+*.color9:       #baa17e
+
+! green
+*.color2:       #65534d
+*.color10:      #bca282
+
+! yellow
+*.color3:       #79665a
+*.color11:      #c1a67e
+
+! blue
+*.color4:       #836e5e
+*.color12:      #cfb48e
+
+! magenta
+*.color5:       #8e7766
+*.color13:      #d1baa3
+
+! cyan
+*.color6:       #917781
+*.color14:      #dfc39b
+
+! white
+*.color7:       #9a846d
+*.color15:      #eed8c4
+
+
+! Rofi
+!rofi.font: monospace 12
+!rofi.padding: 20
+!rofi.line-padding: 2
+!rofi.color-enabled: true
+!rofi.hide-scrollbar: true
+!rofi.separator-style: solid
+!rofi.color-window: #1c2023, #919ba0, #1c2023
+!rofi.color-normal: #1c2023, #919ba0, #1c2023, #a4a4a4, #1c2023
+!rofi.color-urgent: argb:00000000, #f43753, argb:00000000, argb:00000000, #e29a49
+!rofi.color-active: argb:00000000, #49bbfb, argb:00000000, argb:00000000, #e29a49
+!rofi.kb-cancel: Escape,Alt+F1
+
+! xterm
+xterm*termName: xterm-256color
+xterm*font: monospace
+xterm*faceName: monospace:size=11
+xterm*loginShell: true
+xterm*vt100*geometry: 90x34
+xterm*saveLines: 2000
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+xterm*eightBitInput: false
+
+! URxvt
+URxvt*saveline: 15000
+URxvt*termName: rxvt-256color
+URxvt*iso14755: false
+URxvt*depth: 32
+URxvt*background: [80]#111111
+URxvt*scrollBar: false
+URxvt*scrollBar_right: false
+URxvt*internalBorder: 0
+URxvt*externalBorder: 0
+URxvt*letterSpace: -1
+URxvt.font: xft:hack:size=9
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.urlLauncher: exo-open
+URxvt.underlineURLs: true
+URxvt.urlButton: 1
+URxvt.geometry: 70x45+0+0
+URxvt.tabbed.tabbar-fg: 4
+URxvt.tabbed.tabbar-bg: 16
+URxvt.tabbed.tab-fg: 15
+URxvt.tabbed.tab-bg: 4
+URxvt*buffered: false
